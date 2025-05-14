@@ -15,20 +15,24 @@
 
 </script>
 
-<AnnouncementBar message="Welcome to Lazy Money! 🚀" />
-
-<nav class="bg-gray-50 fixed w-full top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16 items-center">
-      <a href="/" class="font-bold text-sm font-geist">**</a>
-      <div class="flex-1 flex justify-center">
+<nav class="bg-gray-50 fixed w-full top-0 z-50 flex flex-col">
+  <AnnouncementBar message="Announcement: Welcome to Lazy Money! 🚀" />
+  <div class="w-full px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-24 w-full">
+      <!-- Left: Logo -->
+      <a href="/" class="font-bold text-sm font-geist min-w-max">**</a>
+      
+      <!-- Center: Search -->
+      <div class="flex-1 flex justify-center mx-4">
         <input
           type="text"
           placeholder="Search Lazy Money"
-          class="w-full max-w-xs px-4 py-2 rounded-lg border border-gray-200 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-200 text-sm text-gray-700 placeholder-gray-400 transition-all shadow-sm"
+          class="max-w-xs w-full px-4 py-2 rounded-lg border border-gray-200 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-200 text-sm text-gray-700 placeholder-gray-400 transition-all shadow-sm"
         />
       </div>
-      <div>
+      
+      <!-- Right: Login/Logout -->
+      <div class="min-w-max">
         {#if $user}
           <Button variant="outline" size="sm" on:click={handleLogout} class="rounded-full">Logout</Button>
         {:else}
