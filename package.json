@@ -42,7 +42,21 @@
 		"vite": "^6.2.6"
 	},
 	"dependencies": {
+		"@fontsource/bebas-neue": "^5.2.5",
+		"@fontsource/geist-sans": "^5.2.5",
+		"@fontsource/inter": "^5.2.5",
+		"@fontsource/jetbrains-mono": "^5.2.5",
+		"@fontsource/lato": "^5.2.5",
+		"@fontsource/luckiest-guy": "^5.2.5",
+		"@fontsource/montserrat": "^5.2.5",
+		"@fontsource/nunito-sans": "^5.2.5",
+		"@fontsource/open-sans": "^5.2.5",
+		"@fontsource/playfair-display": "^5.2.5",
+		"@fontsource/roboto": "^5.2.5",
+		"@fontsource/source-serif-pro": "^5.2.5",
+		"@fontsource/tiro-bangla": "^5.2.5",
 		"@inlang/paraglide-js": "^2.0.0",
+		"@supabase/supabase-js": "^2.49.4",
 		"fontsource-inter": "^4.0.0"
 	}
 }

@@ -55,8 +55,21 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
-			}
+    'sans': [...fontFamily.sans],
+    'inter': ['Inter', 'sans-serif'],
+    'geist': ['Geist Sans', 'sans-serif'],
+    'jetbrains': ['JetBrains Mono', 'monospace'],
+    'bebas': ['"Bebas Neue"', 'sans-serif'],
+    'lato': ['Lato', 'sans-serif'],
+    'luckiest': ['"Luckiest Guy"', 'cursive'],
+    'montserrat': ['Montserrat', 'sans-serif'],
+    'opensans': ['"Open Sans"', 'sans-serif'],
+    'playfair': ['"Playfair Display"', 'serif'],
+    'roboto': ['Roboto', 'sans-serif'],
+    'sourceserif': ['"Source Serif Pro"', 'serif'],
+    'tirobangla': ['"Tiro Bangla"', 'serif'],
+    'nunito': ['"Nunito Sans"', 'sans-serif'],
+  }
 		}
 	},
 };

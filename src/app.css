@@ -1,3 +1,5 @@
+@import './lib/styles/fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -74,5 +76,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased; /* For WebKit/Blink */
+    -moz-osx-font-smoothing: grayscale;  /* For Firefox on macOS */
+    text-rendering: optimizeLegibility; /* General legibility optimization */
   }
 }
