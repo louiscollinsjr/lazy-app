@@ -1,6 +1,6 @@
 ---
 id: "article-2"
-article_id: "HYSA4Cash"
+article_id: "LzHBTN3cHs7QEv0bWGQr2"
 title: "Make Your Savings Work: High-Yield Accounts"
 slug: "high-yield-savings-accounts"
 description: "Learn how High-Yield Savings Accounts (HYSAs) and Certificates of Deposit (CDs) can help you earn significantly more interest on your cash reserves."

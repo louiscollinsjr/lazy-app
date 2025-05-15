@@ -1,6 +1,6 @@
 ---
 id: "article-1"
-article_id: "REITs4Pass"
+article_id: "zFbzpJtnbm5DbcxJrbbuL"
 title: "Easy Real Estate Investing: REITs & Crowdfunding"
 slug: "easy-real-estate-investing-reits-crowdfunding"
 description: "Explore low-effort ways to invest in real estate, earning income without the burdens of traditional property ownership."

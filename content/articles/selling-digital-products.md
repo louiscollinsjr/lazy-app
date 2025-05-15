@@ -1,6 +1,6 @@
 ---
 id: "article-4"
-article_id: "DigitalCreate"
+article_id: "wW3SDBpCvZ90Ln-fgbMHX"
 title: "Create & Sell: Digital Products for Passive Income"
 slug: "selling-digital-products"
 description: "Turn your knowledge, skills, or creativity into sellable digital products like ebooks, templates, or courses."

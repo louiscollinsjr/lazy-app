@@ -1,6 +1,6 @@
 ---
 id: "article-3"
-article_id: "AffiliateEZ"
+article_id: "WMZuOx8fbyH7qxN0n-0jg"
 title: "Promote & Profit: Beginner Affiliate Marketing"
 slug: "beginner-affiliate-marketing"
 description: "Get started with affiliate marketing and earn commissions by promoting products or services you believe in online."

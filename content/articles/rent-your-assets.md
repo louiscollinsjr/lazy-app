@@ -1,6 +1,6 @@
 ---
 id: "article-6"
-article_id: "RentYourStuff"
+article_id: "tdH1GmhL4Bfq77pzTQWUG"
 title: "Monetize What You Own: Easy Rentals"
 slug: "rent-your-assets"
 description: "Learn how renting out items you already own, like spare rooms, cars, or tools, can generate extra income with minimal effort."

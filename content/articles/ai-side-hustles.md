@@ -1,6 +1,6 @@
 ---
 id: "article-5"
-article_id: "AIPassive"
+article_id: "qyjkHIOXTwRQfXwIhdpHh"
 title: "AI-Powered Side Hustles for Beginners"
 slug: "ai-side-hustles"
 description: "Discover how artificial intelligence tools can help you start and automate online side hustles with less manual effort."

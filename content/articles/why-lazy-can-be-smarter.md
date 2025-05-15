@@ -1,6 +1,6 @@
 ---
 id: "article-7"
-article_id: "LazySmart"
+article_id: "8NOhDzg4E30loOB1XCBNb"
 title: "Why Being 'Lazy' Can Make You Richer"
 slug: "why-lazy-can-be-smarter"
 description: "Embrace strategic laziness to find the most efficient paths to success, automate tasks, and focus on high-impact activities."
