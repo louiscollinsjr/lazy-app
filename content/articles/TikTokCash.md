@@ -4,7 +4,7 @@ article_id: 2-Ia_broNGZurbCMe5O2_
 title: Turning TikTok Advice into Cash
 slug: tiktok-passive-income-guide
 description: We reverse-engineer a viral TikTok hustle into something real and sustainable.
-featured_image: /images/articles/tiktok.jpg
+featured_image: ''
 category: YouTube Summaries
 tags:
   - passive income

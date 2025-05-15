@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "buildCommand": "ROLLUP_SKIP_NODEJS=true npm run build"
+      }
+    }
+  ],
+  "env": {
+    "ROLLUP_SKIP_NODEJS": "true"
+  }
+}
