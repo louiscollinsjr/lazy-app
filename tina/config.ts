@@ -65,7 +65,8 @@ export default defineConfig({
           { type: 'string', name: 'author', label: 'Author' },
           { type: 'boolean', name: 'draft', label: 'Draft' },
           { type: 'string', name: 'sources', label: 'Sources', list: true },
-          { type: 'rich-text', name: 'content', label: 'Content' },
+          // Main content (not in frontmatter)
+          { type: 'rich-text', name: 'body', label: 'Body', isBody: true }
         ],
       },
     ],
