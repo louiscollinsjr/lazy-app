@@ -119,14 +119,14 @@
                 />
               </div>
             {/if} -->
-            <div class="p-1 flex-1 flex flex-col justify-between h-full">
+            <div class="p-1 flex-1 flex flex-col gap-4 justify-between h-full">
               <div>
                 {#if article.category}
                   <Badge variant="secondary" class="text-[8px] uppercase mb-4 tracking-wider px-2 py-0.5 bg-gray-100 text-gray-600">{article.category}</Badge>
                 {/if}
-                <h3 class="text-xs font-medium font-geist mb-1 text-gray-900 line-clamp-2">{article.title}</h3>
+                <h3 class="text-lg font-medium font-geist mb-1 text-gray-900 line-clamp-2">{article.title}</h3>
                 {#if article.description}
-                  <p class="text-xs text-gray-600 line-clamp-2 mb-0.5">{article.description}</p>
+                  <p class="text-sm text-gray-600 line-clamp-2 mb-0.5">{article.description}</p>
                 {/if}
                 <!-- {#if article.tags && article.tags.length > 0}
                   <div class="mt-3 flex items-center gap-1.5 mb-3">

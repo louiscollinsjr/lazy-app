@@ -81,7 +81,7 @@
           <Badge variant="secondary" class="text-[10px] uppercase tracking-wider px-2 py-0.5 bg-gray-100 text-gray-600">{tag}</Badge>
         {/each} -->
       </div>
-      <h3 class="text-3xl font-medium font-geist mb-1 text-gray-900 line-clamp-2">{article.title}</h3>
+      <h3 class="text-4xl font-medium font-geist mb-4 text-gray-900 line-clamp-2">{article.title}</h3>
       <div class="text-gray-700 text-base md:text-lg line-clamp-3 mb-8 max-w-[75%]">{article.description}</div>
       <div class="mt-2 text-[11px] text-gray-500 flex flex-col items-start space-y-1">
         {#if article.published_date}
