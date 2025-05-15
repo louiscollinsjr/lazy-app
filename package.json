@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "tinacms dev -c \"vite dev\"",
-		"build": "tinacms build && vite build",
+		"build": "node build-prod.js",
+		"build:notina": "SKIP_TINA=true node build-prod.js",
 		"clean": "bun pm cache rm && rm -rf node_modules",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",

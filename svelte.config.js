@@ -12,10 +12,18 @@ const config = {
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter(),
+		adapter: adapter({
+			// Specific Vercel output configuration
+			pages: 'build',
+			assets: 'build',
+			fallback: 'index.html',
+			relocate: true
+		}),
 		alias: {
-			"@/*": "./path/to/lib/*",
-			"tina:server": path.resolve('tina/__generated__/entrypoint.js'),
+			"$lib": path.resolve('./src/lib'),
+			"$components": path.resolve('./src/lib/components'),
+			"@/*": path.resolve('./src/*')
+			// Removing tina:server alias as we're handling it differently now
 		},
 	}
 };

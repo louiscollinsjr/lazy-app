@@ -1,14 +1,10 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node",
-      "config": {
-        "buildCommand": "ROLLUP_SKIP_NODEJS=true npm run build"
-      }
-    }
-  ],
+  "buildCommand": "ROLLUP_SKIP_NODEJS=true npm run build",
+  "installCommand": "npm install --no-optional",
+  "framework": "sveltekit",
+  "outputDirectory": ".svelte-kit/output",
   "env": {
-    "ROLLUP_SKIP_NODEJS": "true"
+    "ROLLUP_SKIP_NODEJS": "true",
+    "NODE_OPTIONS": "--max-old-space-size=4096"
   }
 }
