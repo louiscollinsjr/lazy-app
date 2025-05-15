@@ -1,7 +1,19 @@
 <script lang="ts">
   import { Button } from "$lib/components/ui/button";
   import { user } from "$lib/stores/auth";
+  import ArticleList from "$lib/components/ArticleList.svelte";
+  import { writable } from 'svelte/store';
+  
+  // Create a store for the search query
+  const searchQuery = writable('');
+  
+  // Function to update search query from navbar
+  function handleSearch(event) {
+    searchQuery.set(event.detail);
+  }
 </script>
+
+<svelte:window on:search={handleSearch} />
 
 <div class="container mx-auto px-4 py-12">
   <div class="max-w-4xl mx-auto">
@@ -28,18 +40,10 @@
       </div>
     {/if}
     
-    <div class="grid md:grid-cols-2 gap-6 mt-8">
-      <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="text-lg font-medium font-montserrat mb-3">Magic Link Authentication</h3>
-        <p class="text-gray-600 text-sm mb-4">Secure, passwordless authentication powered by Supabase.</p>
-        <Button variant="ghost" size="sm" class="font-luckiest">Learn More</Button>
-      </div>
-      
-      <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="text-lg font-medium font-montserrat mb-3">Markdown Content</h3>
-        <p class="text-gray-600 text-sm mb-4">Ready for articles, documentation, and more.</p>
-        <Button variant="ghost" size="sm" class="font-luckiest">Coming Soon</Button>
-      </div>
+    <div class="mt-8">
+      <h2 class="text-2xl font-bold font-geist mb-6">Browse Money-Making Ideas</h2>
+      <ArticleList searchQuery={$searchQuery} />
     </div>
+
   </div>
 </div>

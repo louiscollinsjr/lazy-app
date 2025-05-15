@@ -4,7 +4,10 @@
   import { supabase } from '$lib/supabaseClient';
   import { Button } from '$lib/components/ui/button';
   import { goto } from '$app/navigation';
+  import { createEventDispatcher } from 'svelte';
   import AnnouncementBar from '$lib/components/AnnouncementBar.svelte';
+  
+  const dispatch = createEventDispatcher();
 
   async function handleLogout() {
     await supabase.auth.signOut()
@@ -28,6 +31,10 @@
           type="text"
           placeholder="Search Lazy Money"
           class="max-w-xs w-full px-4 py-2 rounded-lg border border-gray-200 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-200 text-sm text-gray-700 placeholder-gray-400 transition-all shadow-sm"
+          on:input={(e) => {
+            // Dispatch a custom 'search' event to the window
+            window.dispatchEvent(new CustomEvent('search', { detail: e.target.value }))
+          }}
         />
       </div>
       

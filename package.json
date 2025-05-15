@@ -61,6 +61,10 @@
 		"@fontsource/tiro-bangla": "^5.2.5",
 		"@inlang/paraglide-js": "^2.0.0",
 		"@supabase/supabase-js": "^2.49.4",
-		"fontsource-inter": "^4.0.0"
+		"@types/uuid": "^10.0.0",
+		"fontsource-inter": "^4.0.0",
+		"gray-matter": "^4.0.3",
+		"slugify": "^1.6.6",
+		"uuid": "^11.1.0"
 	}
 }
