@@ -7,6 +7,7 @@
 		"dev": "tinacms dev -c \"vite dev\"",
 		"build": "node build-prod.js",
 		"build:notina": "SKIP_TINA=true node build-prod.js",
+		"vercel-build": "NODE_OPTIONS='--require ./rollup-patch.cjs' SKIP_TINA=true vite build",
 		"clean": "bun pm cache rm && rm -rf node_modules",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
