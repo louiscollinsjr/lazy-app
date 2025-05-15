@@ -18,7 +18,7 @@
 
 </script>
 
-<nav class="bg-gray-50 fixed w-full top-0 z-50 flex flex-col">
+<nav class="bg-white fixed w-full top-0 z-50 flex flex-col">
   <AnnouncementBar message="Announcement: Welcome to Lazy Money! 🚀" />
   <div class="w-full px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-24 w-full">

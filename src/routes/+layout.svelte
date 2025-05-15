@@ -30,7 +30,7 @@
 	});
 </script>
 
-<div class="min-h-screen flex flex-col bg-gray-50">
+<div class="min-h-screen flex flex-col bg-white">
 	<Navbar />
 	<main class="flex-grow">
 		{@render children()}
