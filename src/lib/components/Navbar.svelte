@@ -7,7 +7,7 @@
   import AnnouncementBar from '$lib/components/AnnouncementBar.svelte';
 
   async function handleLogout() {
-    await supabase.auth.signOut();
+    await supabase.auth.signOut()
     $session = null;
     $user = null;
     goto('/');

@@ -4,6 +4,7 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { supabase } from '$lib/supabaseClient';
 	import { session, user } from '$lib/stores/auth';
+	
 
 	let { children } = $props();
 
