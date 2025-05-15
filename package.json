@@ -4,8 +4,9 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "tinacms dev -c \"vite dev\"",
+		"build": "tinacms build && vite build",
+		"clean": "bun pm cache rm && rm -rf node_modules",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -63,5 +64,8 @@
 		"@supabase/supabase-js": "^2.49.4",
 		"fontsource-inter": "^4.0.0",
 		"tinacms": "^2.7.7"
+	},
+	"tina": {
+		"config": "tina/config.ts"
 	}
 }

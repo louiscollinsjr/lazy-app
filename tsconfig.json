@@ -1,6 +1,10 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"tina:server": ["tina/__generated__/entrypoint.js"]
+		},
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
