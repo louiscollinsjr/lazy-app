@@ -7,6 +7,12 @@
   import { Badge } from '$lib/components/ui/badge'
   
   export let searchQuery = '';
+  export let maxArticles: number | null = null;     // Limit number of articles to display
+  export let excludeId: string | null = null;       // Exclude current article from list
+  export let category: string | null = null;        // Filter by specific category
+  export let relatedMode: boolean = false;          // Special styling for related articles
+  export let title: string | null = null;           // Optional section title
+  export let titleClass: string = "text-2xl font-normal font-geist mb-6";  // Custom title classes
   
   interface Article {
     id: string;
@@ -29,20 +35,34 @@
   // Filter articles based on search input
   $: {
     if ($articles) {
-      $filteredArticles = $articles.filter(article => {
+      let filtered = $articles.filter(article => {
+        // Basic filters that always apply
         if (article.draft) return false; // Don't show draft articles
+        if (excludeId && article.id === excludeId) return false; // Exclude current article
         
-        const query = searchQuery.toLowerCase();
-        if (!query) return true; // If no query, show all
+        // Category filter
+        if (category && article.category !== category) return false;
         
-        // Search in title, description, category, and tags
-        return (
-          article.title.toLowerCase().includes(query) ||
-          (article.description && article.description.toLowerCase().includes(query)) ||
-          (article.category && article.category.toLowerCase().includes(query)) ||
-          (article.tags && article.tags.some(tag => tag.toLowerCase().includes(query)))
-        );
+        // Search query filter (only apply if not in related mode and query exists)
+        if (!relatedMode && searchQuery) {
+          const query = searchQuery.toLowerCase();
+          return (
+            article.title.toLowerCase().includes(query) ||
+            (article.description && article.description.toLowerCase().includes(query)) ||
+            (article.category && article.category.toLowerCase().includes(query)) ||
+            (article.tags && article.tags.some(tag => tag.toLowerCase().includes(query)))
+          );
+        }
+        
+        return true;
       });
+      
+      // Apply maxArticles limit if set
+      if (maxArticles) {
+        filtered = filtered.slice(0, maxArticles);
+      }
+      
+      $filteredArticles = filtered;
     }
   }
   
@@ -95,11 +115,17 @@
       <p>{$error}</p>
     </div>
   {:else if $filteredArticles.length === 0}
-    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 text-center">
-      <h3 class="text-lg font-medium mb-2">No articles found</h3>
-      <p class="text-gray-600">Try adjusting your search term</p>
-    </div>
+    <!-- Display nothing when no articles found in related mode -->
+    {#if !relatedMode}
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 text-center">
+        <h3 class="text-lg font-medium mb-2">No articles found</h3>
+        <p class="text-gray-600">Try adjusting your search term</p>
+      </div>
+    {/if}
   {:else}
+    {#if title}
+      <h2 class={titleClass}>{title}</h2>
+    {/if}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-0 pb-8">
       {#each $filteredArticles as article (article.id)}
         <div class="relative h-full w-full bg-transparent transition-all duration-200 overflow-hidden bg-white">

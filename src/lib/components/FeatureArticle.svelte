@@ -68,9 +68,9 @@
       <!-- {#if article.featured_image}
         <img src={article.featured_image} alt={article.title} class="object-cover w-full h-full absolute inset-0 z-0" />
       {/if} -->
-      <div class="relative z-10 flex items-center justify-center w-full h-full">
+      <!-- <div class="relative z-10 flex items-center justify-center w-full h-full">
         <span class="bg-white/70 rounded-2xl px-8 py-6 text-3xl md:text-4xl font-bold text-gray-700 shadow-none backdrop-blur-sm group-hover:scale-105 transition-transform duration-200">{article.title}</span>
-      </div>
+      </div> -->
     </div>
     <div class="pl-0 pr-4 py-4 md:pl-1 md:pr-8 md:py-6">
       <div class="flex flex-wrap gap-2 mb-6">
