@@ -126,7 +126,7 @@
     {#if title}
       <h2 class={titleClass}>{title}</h2>
     {/if}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-0 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-16 p-0 pb-8">
       {#each $filteredArticles as article (article.id)}
         <div class="relative h-full w-full bg-transparent transition-all duration-200 overflow-hidden bg-white">
           <Button 

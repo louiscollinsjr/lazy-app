@@ -48,8 +48,7 @@
       <!-- <FeatureArticle articleId="your-article-id-here" /> -->
       <section class="mt-24 pl-2">
         <ScrollToExplore />
-        <h2 class="text-4xl font-normal font-geist mb-12">Browse Money-Making Ideas</h2>
-        <ArticleList searchQuery={$searchQuery} />
+        <ArticleList searchQuery={$searchQuery} title="Browse Money-Making Ideas" titleClass="text-4xl font-medium font-geist mb-12" />
       </section>
       <!-- CTA-->
       <MinimalCta />
