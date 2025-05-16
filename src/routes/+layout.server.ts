@@ -1,8 +1,11 @@
 import type { LayoutServerLoad } from './$types';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '$lib/supabaseClient';
 
-export const load: LayoutServerLoad = async ({ cookies }) => {
-  // Optionally, you can use cookies to get the session
-  // For now, just return null; client will handle session
-  return { session: null };
+export const load: LayoutServerLoad = async () => {
+  // The session will be handled on the client side
+  // Just return a placeholder for now
+  return {
+    session: null,
+    user: null
+  };
 };

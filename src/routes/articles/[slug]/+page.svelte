@@ -27,6 +27,7 @@
   import { Button } from '$lib/components/ui/button';
   import { goto } from '$app/navigation';
   import { writable } from 'svelte/store';
+  import Comments from '$lib/components/Comments.svelte';
   
   const articleData = writable(null);
   const articleContent = writable('');
@@ -153,5 +154,9 @@
         {$articleContent}
       </div>
     </article>
+    <!-- Comments section with proper article ID -->  
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <Comments articleId={$articleData.id} />
+    </div>
   {/if}
 </div>
