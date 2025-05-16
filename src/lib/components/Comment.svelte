@@ -4,6 +4,7 @@
   import { page } from '$app/stores';
   import { user as userStore } from '$lib/stores/auth';
   import { createEventDispatcher } from 'svelte';
+  import Reactions from './Reactions.svelte';
 
   type CommentType = {
     id: string;
@@ -24,6 +25,11 @@
   let replyOpen = $state(false);
   let replyBody = $state('');
   let loading = $state(false);
+
+  function handleAuthRequired() {
+    // Optionally trigger login modal
+    console.log('Auth required for reactions');
+  }
 
   async function reply() {
     if (!user) return;
@@ -96,6 +102,17 @@
   }
 </script>
 
+<style>
+  .comment-body {
+    margin-top: 0.5rem;
+  }
+  .comment-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+</style>
+
 <div class="py-3 group hover:bg-gray-50 px-3 -mx-3 rounded transition-colors">
   <div class="flex items-start space-x-3">
     <div class="flex-shrink-0">
@@ -111,7 +128,17 @@
           <span class="text-xs text-gray-500">{formatDate(comment.created_at)}</span>
         </div>
       </div>
-      <div class="text-gray-800 whitespace-pre-line">{comment.body}</div>
+      <div class="comment-body">
+        <p>{comment.body}</p>
+        <div class="comment-actions">
+          <Reactions 
+            contentId={comment.id} 
+            contentType="comment" 
+            compact={true} 
+            on:auth-required={handleAuthRequired} 
+          />
+        </div>
+      </div>
       
       {#if user}
         <div class="mt-2 flex items-center space-x-3 text-sm">

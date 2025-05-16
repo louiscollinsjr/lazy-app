@@ -4,9 +4,12 @@
   import { goto } from '$app/navigation';
   import { Badge } from '$lib/components/ui/badge';
   import { Button } from '$lib/components/ui/button';
+  import Reactions from './Reactions.svelte';
+  //import { formatDate } from '$lib/utils';
+
   export let articleId: string | null = null;
-  // export let fallbackBg = 'bg-gradient-to-tr from-yellow-300 via-indigo-300 to-yellow-200';
   export let fallbackBg = "bg-[url('/abstract-bg/freakywang_A_minimal_and_simple_illustration_with_large_shapes__fe7ed846-ffe8-4b51-9942-669494fbc41d.png')] bg-cover bg-center";
+  export let showReactions = true;
 
   interface Article {
     id: string;
@@ -82,7 +85,22 @@
         {/each} -->
       </div>
       <h3 class="text-4xl font-medium font-geist mb-4 text-gray-900 line-clamp-2">{article.title}</h3>
-      <div class="text-gray-700 text-base md:text-lg line-clamp-3 mb-8 max-w-[75%]">{article.description}</div>
+      <div class="text-gray-700 text-base md:text-lg line-clamp-3 mb-2 max-w-[75%]">{article.description}</div>
+      <!-- <div class="featured-meta text-sm">
+        {#if article.author}<span class="featured-author">By {article.author}</span>{/if}
+        {#if article.published_date}<span class="featured-date">{formatDate(article.published_date)}</span>{/if}
+      </div> -->
+      
+      {#if showReactions}
+      <div class="featured-reactions py-2">
+        <Reactions 
+          contentId={article.id} 
+          contentType="article" 
+          compact={true}
+          showCounts={true}
+        />
+      </div>
+      {/if}
       <div class="mt-2 text-[11px] text-gray-500 flex flex-col items-start space-y-1">
         {#if article.published_date}
           <div>{formatDate(article.published_date)}</div>

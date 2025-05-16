@@ -31,6 +31,7 @@
 	import { writable } from 'svelte/store';
 	import Comments from '$lib/components/Comments.svelte';
 	import ArticleList from '$lib/components/ArticleList.svelte';
+	import Reactions from '$lib/components/Reactions.svelte';
 
 	const articleData = writable(null);
 	const articleContent = writable('');
@@ -141,13 +142,24 @@
 
 			<h1 class="mb-2 font-geist text-4xl font-bold">{$articleData.title}</h1>
 
-			<div class="mb-12 flex items-center text-gray-500 text-sm">
+			<div class="article-metadata" style="display: flex; gap: 1rem; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
 				{#if $articleData.author}
-					<span class="mr-4">By {$articleData.author}</span>
+					<span class="article-author">By {$articleData.author}</span>
 				{/if}
 				{#if $articleData.published_date}
-					<span>{formatDate($articleData.published_date)}</span>
+					<span class="article-date">{formatDate($articleData.published_date)}</span>
 				{/if}
+			</div>
+
+			<div class="article-reactions pb-8">
+				<Reactions 
+					contentId={$articleData.id} 
+					contentType="article" 
+					on:auth-required={() => {
+						// Handle auth required (e.g., show login modal)
+						console.log('Authentication required for reactions');
+					}} 
+				/>
 			</div>
 
 			{#if $articleData.featured_image}
