@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '$lib/styles/article.css';
 	import { Badge } from '$lib/components/ui/badge';
 
 	// List of static fallback images
@@ -32,6 +33,17 @@
 	import Comments from '$lib/components/Comments.svelte';
 	import ArticleList from '$lib/components/ArticleList.svelte';
 	import Reactions from '$lib/components/Reactions.svelte';
+	import { marked } from 'marked';
+	
+	// Configure marked options
+	marked.setOptions({
+		gfm: true, // GitHub Flavored Markdown
+		breaks: true, // Convert \n to <br>
+		pedantic: false,
+		sanitize: false, // Output raw HTML
+		smartLists: true, // Use smarter list behavior
+		smartypants: true // Use smart punctuation
+	})
 
 	const articleData = writable(null);
 	const articleContent = writable('');
@@ -60,7 +72,9 @@
 				if (!response.ok) throw new Error('Failed to load article content');
 
 				const content = await response.text();
-				articleContent.set(content);
+				// Parse markdown to HTML
+				const htmlContent = marked.parse(content);
+				articleContent.set(htmlContent);
 			} catch (contentError) {
 				console.error('Error loading markdown content:', contentError);
 				// Even if we can't load the content, still show article metadata
@@ -183,8 +197,8 @@
 			{/if}
 
 			<!-- Article content rendered as markdown -->
-			<div class="markdown-body whitespace-pre-line">
-				{$articleContent}
+			<div class="markdown-body prose prose-lg max-w-none">
+				{@html $articleContent}
 			</div>
 		</article>
 
