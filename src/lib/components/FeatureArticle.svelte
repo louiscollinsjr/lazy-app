@@ -110,14 +110,13 @@
         {/if}
       </div>
     </div>
-    <Button
-      class="absolute inset-0 w-full h-full p-0 m-0 opacity-0 cursor-pointer"
+    <a
+      href="/articles/{article.slug}"
+      class="absolute inset-0 w-full h-full p-0 m-0 z-10"
       aria-label={`Read article: ${article.title}`}
-      on:click={() => openArticle(article.slug)}
       tabIndex="0"
-      variant="ghost"
     >
       <span class="sr-only">Read {article.title}</span>
-    </Button>
+    </a>
   </div>
 {/if}

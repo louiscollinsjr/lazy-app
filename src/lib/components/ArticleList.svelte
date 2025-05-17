@@ -129,12 +129,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-16 p-0 pb-8">
       {#each $filteredArticles as article (article.id)}
         <div class="relative h-full w-full bg-transparent transition-all duration-200 overflow-hidden bg-white">
-          <Button 
-            class="absolute inset-0 w-full h-full p-0 m-0 opacity-0 cursor-pointer"
-            on:click={() => navigateToArticle(article.slug)}
+          <a 
+            href="/articles/{article.slug}" 
+            class="absolute inset-0 w-full h-full p-0 m-0 z-10"
+            aria-label="Read {article.title}"
           >
             <span class="sr-only">Read {article.title}</span>
-          </Button>
+          </a>
           <div class="flex flex-col h-full">
             <!-- {#if article.featured_image}
               <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
@@ -167,7 +168,7 @@
                   <div>{formatDate(article.published_date)}</div>
                 {/if}
                 {#if article.author}
-                  <span>By {article.author}</span>
+                  <span>Reviewed by {article.author}</span>
                 {/if}
               </div>
             </div>

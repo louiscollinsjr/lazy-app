@@ -41,10 +41,10 @@
       <!-- Right: Login/Logout -->
       <div class="min-w-max">
         {#if $user}
-          <Button variant="outline" size="sm" on:click={handleLogout} class="rounded-full">Logout</Button>
+          <button on:click={handleLogout} class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">Logout</button>
         {:else}
-          <a href="/login">
-            <Button class="rounded-lg bg-black hover:bg-gray-900 border-none text-white shadow-none px-4 py-2 text-sm font-medium tracking-wider">Log in or sign up</Button>
+          <a href="/login" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-900 transition-colors tracking-wider">
+            Log in or sign up
           </a>
         {/if}
       </div>
