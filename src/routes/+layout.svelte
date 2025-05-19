@@ -6,7 +6,7 @@
   import { supabase } from '$lib/supabaseClient';
   import { page } from '$app/stores';
   import { session as sessionStore, user as userStore } from '$lib/stores/auth';
-  import { isSidebarOpen } from '$lib/stores/uiStore';
+  import { isSidebarOpen, updateScrollPosition, toggleSidebar } from '$lib/stores/uiStore';
   
   let { children } = $props();
   let sessionLoaded = $state(false);
@@ -20,6 +20,17 @@
       userStore.set(data.session.user);
     }
     sessionLoaded = true;
+    
+    // Set up scroll tracking
+    function handleScroll() {
+      updateScrollPosition(window.scrollY);
+    }
+    
+    // Initialize with current scroll position
+    updateScrollPosition(window.scrollY);
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
@@ -36,6 +47,7 @@
 
     return () => {
       subscription.unsubscribe();
+      window.removeEventListener('scroll', handleScroll);
     };
   });
 
@@ -48,16 +60,21 @@
 </script>
 
 <div class="min-h-screen flex flex-col bg-white">
+  <!-- Fixed Navbar at top -->
   <Navbar />
   
-  <div class="flex flex-grow">
-    <!-- Sidebar -->
+  <!-- Fixed sidebar that never scrolls -->
+  <div class="fixed top-16 left-0 bottom-0 z-10 transition-all duration-300 ease-in-out"
+       class:w-64={$isSidebarOpen}
+       class:w-0={!$isSidebarOpen}>
     <Sidebar />
-    
-    <!-- Main Content -->
-    <main class="flex-grow transition-all duration-300 ease-in-out" 
-          class:ml-64={$isSidebarOpen} 
-          class:ml-0={!$isSidebarOpen}>
+  </div>
+  
+  <!-- Main content with its own scroll area, pushed right when sidebar is open -->
+  <div class="flex-grow pt-4 transition-all duration-300 ease-in-out"
+       class:ml-64={$isSidebarOpen}
+       class:ml-0={!$isSidebarOpen}>
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
       {@render children({ data: enhancedData })}
     </main>
   </div>

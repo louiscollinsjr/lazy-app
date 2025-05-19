@@ -6,7 +6,7 @@
   import { goto } from '$app/navigation';
   import { createEventDispatcher } from 'svelte';
   import { fade } from 'svelte/transition';
-  import { isSidebarOpen, toggleSidebar } from '$lib/stores/uiStore';
+  import { isSidebarOpen, toggleSidebar, scrollY, sidebarClosedAtScrollY } from '$lib/stores/uiStore';
   import AnnouncementBar from '$lib/components/AnnouncementBar.svelte';
 
   const dispatch = createEventDispatcher();
@@ -33,10 +33,15 @@
   });
 </script>
 
-<nav class="bg-white fixed w-full top-0 z-50 flex flex-col">
-  <AnnouncementBar message="Announcement: Welcome to Lazy Money! 🚀" />
+<nav class="bg-white w-full z-50 flex flex-col transition-all duration-300 ease-in-out" 
+     class:fixed={$isSidebarOpen || $scrollY < 60} 
+     class:sticky={!$isSidebarOpen && $scrollY >= 60} 
+     class:top-0={$isSidebarOpen || $scrollY < $sidebarClosedAtScrollY + 500}
+     class:-top-16={!$isSidebarOpen && $scrollY >= $sidebarClosedAtScrollY + 500}>
+
+  <!-- <AnnouncementBar message="Announcement: Welcome to Lazy Money! 🚀" /> -->
   <div class="w-full px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-24 w-full">
+    <div class="flex items-center justify-between h-16 w-full">
       <!-- Left: Logo and Drawer Toggle -->
       <div class="flex items-center gap-4">
         
@@ -69,7 +74,7 @@
       <!-- Right: Login/Logout -->
       <div class="min-w-max">
         {#if $user}
-          <button on:click={handleLogout} class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">Logout</button>
+          <button on:click={handleLogout} class="px-4 py-2 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">Logout</button>
         {:else}
           <a href="/login" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-900 transition-colors tracking-wider">
             Log in or sign up
