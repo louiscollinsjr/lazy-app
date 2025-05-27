@@ -6,6 +6,7 @@
   import FeatureArticle from '$lib/components/FeatureArticle.svelte';
   import ScrollToExplore from '$lib/components/ScrollToExplore.svelte';
   import MinimalCta from '$lib/components/MinimalCta.svelte';
+  import RecommendedArticles from '$lib/components/RecommendedArticles.svelte';
   
   // Create a store for the search query
   const searchQuery = writable('');
@@ -18,8 +19,8 @@
 
 <svelte:window on:search={handleSearch} />
 
-<div class="container mx-auto px-4 py-32">
-  <div class="max-w-5xl mx-auto">
+<div class="container mx-auto px-0 py-32">
+  <div class="max-w-6xl mx-auto">
     
     {#if $user}
       <!-- <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
@@ -43,6 +44,7 @@
     {/if}
     
     <div class="mt-8 p-2">
+      <RecommendedArticles />
       <FeatureArticle />
       <!-- or for a specific article -->
       <!-- <FeatureArticle articleId="your-article-id-here" /> -->
