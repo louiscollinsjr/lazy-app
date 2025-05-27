@@ -63,9 +63,10 @@
       {article.title}
     </h3>
 
-    <div class="text-gray-700 mb-4 line-clamp-2 flex-grow
-      {variant === 'default' ? 'text-base w-[80%]' : 'text-sm'}">
-      {article.description}
+    <div class="text-gray-700 mb-4 flex-grow overflow-hidden">
+      <p class="line-clamp-2 {variant === 'default' ? 'text-base w-[80%]' : 'text-sm'}">
+        {article.description}
+      </p>
     </div>
 
     {#if showMetadata && (article.published_date || article.author)}
