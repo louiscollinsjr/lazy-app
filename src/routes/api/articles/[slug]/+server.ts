@@ -17,12 +17,9 @@ export async function GET({ params }) {
     const articlePath = path.resolve(
       `static/content/articles/${slug.endsWith('.md') ? slug : `${slug}.md`}`
     );
-    
-    // Verify the path is within the content directory
-    const normalizedPath = path.normalize(articlePath);
     const contentDir = path.normalize(path.join(process.cwd(), 'static/content/articles'));
     
-    if (!normalizedPath.startsWith(contentDir)) {
+    if (!articlePath.startsWith(contentDir)) {
       throw error(403, 'Access denied');
     }
     
