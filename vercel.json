@@ -1,9 +1,4 @@
 {
   "version": 2,
-  "public": true,
-  "functions": {
-    "api/**.js": {
-      "includeFiles": "content/articles/**"
-    }
-  }
+  "public": true
 }
