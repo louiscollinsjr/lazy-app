@@ -68,9 +68,7 @@
 
 			// Fetch the markdown content from the file
 			try {
-				// Use the new content/articles endpoint that serves files directly from the filesystem
-				// Always include the .md extension for consistent behavior in production
-				const response = await fetch(`/content/articles/${article.slug}.md`);
+				const response = await fetch(`/api/articles/${article.slug}`);
 				if (!response.ok) throw new Error('Failed to load article content');
 
 				const content = await response.text();

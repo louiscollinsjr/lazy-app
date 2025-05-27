@@ -1,14 +1,4 @@
 {
   "framework": "sveltekit",
-  "outputDirectory": ".svelte-kit/output",
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "files": [
-    "content/**",
-    "static/**",
-    "src/**",
-    "package.json",
-    "vite.config.ts",
-    "svelte.config.js"
-  ]
+  "outputDirectory": ".svelte-kit/output"
 }

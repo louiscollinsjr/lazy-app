@@ -15,12 +15,12 @@ export async function GET({ params }) {
     
     // Handle both with and without .md extension
     const articlePath = path.resolve(
-      `content/articles/${slug.endsWith('.md') ? slug : `${slug}.md`}`
+      `static/content/articles/${slug.endsWith('.md') ? slug : `${slug}.md`}`
     );
     
     // Verify the path is within the content directory
     const normalizedPath = path.normalize(articlePath);
-    const contentDir = path.normalize(path.join(process.cwd(), 'content/articles'));
+    const contentDir = path.normalize(path.join(process.cwd(), 'static/content/articles'));
     
     if (!normalizedPath.startsWith(contentDir)) {
       throw error(403, 'Access denied');
