@@ -20,7 +20,7 @@
 </script>
 
 
-<div class="min-h-screen flex items-center justify-center bg-gray-50 px-2">
+<div class="min-h-screen flex items-center justify-center px-2">
   <Card class="w-full max-w-md p-0 border border-gray-100 shadow-xl rounded-2xl">
     <form class="flex flex-col items-center p-8" on:submit|preventDefault={signInWithMagicLink} autocomplete="off">
       <CardHeader class="flex flex-col items-center w-full">
