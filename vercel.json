@@ -1,5 +1,10 @@
 {
   "version": 2,
   "public": true,
-  "includeFiles": ["static/content/**"]
+  "includeFiles": ["static/content/**"],
+  "functions": {
+    "api/**.js": {
+      "includeFiles": "content/articles/**"
+    }
+  }
 }
