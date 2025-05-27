@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
+import matter from 'gray-matter';
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ params, request }) {
@@ -66,11 +67,15 @@ export async function GET({ params, request }) {
     
     // Read file content
     console.log('Reading file content...');
-    const content = fs.readFileSync(normalizedPath, 'utf-8');
-    console.log('File content length:', content.length);
+    const fileContent = fs.readFileSync(normalizedPath, 'utf-8');
+    console.log('File content length:', fileContent.length);
+    
+    // Parse front matter and extract content only
+    const { content } = matter(fileContent);
+    console.log('Content after front matter removal:', content.length);
     
     console.log('Successfully serving markdown file');
-    return new Response(content, {
+    return new Response(content.trim(), {
       headers: {
         'Content-Type': 'text/markdown',
         'Cache-Control': 'public, max-age=3600' // 1 hour cache
