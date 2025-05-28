@@ -52,7 +52,7 @@
   <div class="pt-0 md:p-0 mt-2 relative z-10 flex flex-col flex-grow">
     {#if showCategory && article.category}
       <div class="my-4 flex-none">
-        <span class="text-xs uppercase tracking-wider px-0 py-0 bg-gray-100 text-gray-600 rounded">
+        <span class="text-[9px] uppercase tracking-wider px-3 py-1 bg-gray-100 text-gray-600 rounded-full">
           {article.category}
         </span>
       </div>
