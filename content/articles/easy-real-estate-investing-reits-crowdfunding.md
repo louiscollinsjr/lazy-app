@@ -2,20 +2,20 @@
 title: 'Easy Real Estate Investing: REITs & Crowdfunding'
 slug: easy-real-estate-investing-reits-crowdfunding
 description: >-
-  Explore low-effort ways to invest in real estate, earning income without the
-  burdens of traditional property ownership.
+  "Unlock effortless passive income with low-risk real estate investments,
+  avoiding traditional property ownership headaches and hassle."
 featured_image: >-
   https://images.unsplash.com/photo-1585615530149-d633ffb36816?auto=format&fit=crop&w=800&q=80
 category: Investing
 tags:
-  - Real Estate
-  - Investing
-  - Passive Income
-  - REITs
-  - Crowdfunding
+  - real estate investing
+  - passive income
+  - low-risk investments
+  - real estate crowdfunding
+  - diversified portfolio
 publishedDate: 2025-05-01T10:00:00.000Z
-author: Lou Collins
-draft: false
+author: LazyMoney Team
+draft: 'false'
 sources:
   - REIT_Basics_Explained.txt
   - Crowdfunding_for_Property_Investors.txt

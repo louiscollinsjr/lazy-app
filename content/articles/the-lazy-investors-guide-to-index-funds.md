@@ -2,15 +2,23 @@
 title: The Lazy Investor's Guide to Index Funds
 slug: the-lazy-investors-guide-to-index-funds
 description: >-
-  Learn how to build wealth on autopilot with index funds. This article explains how to create a simple, low-maintenance investment portfolio that grows steadily over time without requiring constant monitoring or complex decision-making.
+  "Automate your investments & build wealth with simple, low-maintenance index
+  funds for long-term growth and steady returns."
 featured_image: >-
   https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
 category: Investing
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T04:14:32.023978
-author: AI Financial Writer
-draft: false
+  - index funds
+  - passive investment
+  - long-term growth
+  - wealth creation
+  - automated investing
+  - low-maintenance portfolio
+  - retirement planning
+  - financial literacy
+publishedDate: 2025-05-27T04:14:32.023Z
+author: LazyMoney Team
+draft: 'false'
 id: 208b4ce2-1736-46ad-b539-bde8f1d4b8b9
 ---
 

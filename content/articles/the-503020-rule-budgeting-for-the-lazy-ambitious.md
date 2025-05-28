@@ -2,15 +2,23 @@
 title: 'The 50/30/20 Rule: Budgeting for the Lazy & Ambitious'
 slug: the-503020-rule-budgeting-for-the-lazy-ambitious
 description: >-
-  Split your income the smart way: 50% to survive, 30% to enjoy, and 20% to grow. A no-brainer system to balance life and build savings without spreadsheets or stress.
+  "Master personal finance with the simple 50/30/20 rule - allocate wisely for
+  survival, enjoyment, and growth without spreadsheets."
 featured_image: >-
   https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+category: Conceptual & Mindset
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T14:08:15.577644
-author: AI Financial Writer
-draft: false
+  - personal finance
+  - budgeting
+  - financial literacy
+  - money management
+  - productivity hacks
+  - saving strategies
+  - minimalism
+  - mindful spending
+publishedDate: 2025-05-27T14:08:15.577Z
+author: LazyMoney Team
+draft: 'false'
 id: 58534c80-95c7-432f-9558-f011c13072eb
 ---
 

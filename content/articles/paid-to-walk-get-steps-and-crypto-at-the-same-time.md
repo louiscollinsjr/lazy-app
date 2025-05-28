@@ -1,16 +1,23 @@
 ---
-title: 'Paid to Walk? Get Steps and Crypto at the Same Time'
+title: Paid to Walk? Get Steps and Crypto at the Same Time
 slug: paid-to-walk-get-steps-and-crypto-at-the-same-time
 description: >-
-  Walk anyway? Get rewarded for it. Apps like Sweatcoin give you crypto or gift cards just for moving. It’s fitness… with financial benefits.
+  "Earn crypto & gift cards by tracking your walks and fitness activities with
+  Sweatcoin and other rewarding wellness apps."
 featured_image: >-
   https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+category: Digital Asset Monetization
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T14:08:15.584364
-author: AI Financial Writer
-draft: false
+  - digital asset monetization
+  - health and wellness apps
+  - fitness rewards
+  - mobile app rewards
+  - cryptocurrency adoption
+  - gamified fitness
+  - wearables and tech
+publishedDate: 2025-05-27T14:08:15.584Z
+author: LazyMoney Team
+draft: 'false'
 id: 47e1e937-d21e-49b4-820f-851bc278573d
 ---
 

@@ -1,14 +1,22 @@
 ---
 title: 'License Your Creations: Selling Photos, Videos, or Music'
 slug: license-your-creations-selling-photos-videos-or-music
-description: Snap, shoot, or compose once—earn forever. Upload original media to platforms and collect royalties each time it's used. AI can even help tag and prep your content faster.
-featured_image: https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+description: >-
+  "Monetize your creations: upload original media, earn passive income, and
+  collect royalties with AI-assisted tagging and effortless monetization."
+featured_image: >-
+  https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
+category: Digital Asset Monetization
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T04:57:50.333976
-author: AI Financial Writer
-draft: false
+  - digital asset monetization
+  - royalty collection
+  - passive income online
+  - ai-powered monetization
+  - content licensing
+  - creative earnings
+publishedDate: 2025-05-27T04:57:50.333Z
+author: LazyMoney Team
+draft: 'false'
 id: 6d2c4e0b-0809-4e06-ba71-a6b9fbfe3feb
 ---
 ## Turn Your Creative Passion into Passive Income by Licensing Your Work

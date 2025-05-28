@@ -1,14 +1,25 @@
 ---
 title: 'AI Agents: Your Automated Business Task Force'
 slug: ai-agents-your-automated-business-task-force
-description: Deploy AI agents using platforms like Make.com or Botpress to handle blog publishing, outreach, and customer support—hands-free. Set it once, and let your digital workforce run 24/7.
-featured_image: https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+description: >-
+  "Unlock productivity with AI-powered automation tools on Make.com & Botpress:
+  streamline publishing, outreach, and 24/7 support tasks efficiently."
+featured_image: >-
+  https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
+category: Online Business
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T04:57:50.329703
-author: AI Financial Writer
-draft: false
+  - online business
+  - productivity
+  - automation
+  - artificial intelligence
+  - workflow optimization
+  - business process automation
+  - make.com
+  - botpress
+  - digital transformation
+publishedDate: 2025-05-27T04:57:50.329Z
+author: LazyMoney Team
+draft: 'false'
 id: 64c22b69-1c0b-407d-91c1-623fcdb6ba67
 ---
 

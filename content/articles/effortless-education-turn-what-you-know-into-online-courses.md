@@ -2,15 +2,23 @@
 title: 'Effortless Education: Turn What You Know Into Online Courses'
 slug: effortless-education-turn-what-you-know-into-online-courses
 description: >-
-  Turn your skills into income by selling online courses. Platforms handle the tech. You handle the content. Once live, it’s mostly hands-off—and scalable.
+  "Create and sell online courses effortlessly - we handle tech, so you can
+  focus on content creation and earn passive income."
 featured_image: >-
   https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+category: Online Business
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T14:08:15.587855
-author: AI Financial Writer
-draft: false
+  - online business
+  - passive income
+  - e-learning platforms
+  - course creation
+  - digital products
+  - scalable business models
+  - hands-free income
+  - education industry
+publishedDate: 2025-05-27T14:08:15.587Z
+author: LazyMoney Team
+draft: 'false'
 id: 6aec349d-8144-4e0b-bd84-6eab6461ee0a
 ---
 

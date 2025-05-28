@@ -1,16 +1,25 @@
 ---
-title: "Lazy Bandwidth Money: Sell Internet You're Not Using"
+title: 'Lazy Bandwidth Money: Sell Internet You''re Not Using'
 slug: lazy-bandwidth-money-sell-internet-youre-not-using
 description: >-
-  Install an app, share unused bandwidth, and earn passively. It's like Airbnb for your Wi-Fi—do almost nothing, get paid (just read the fine print).
+  "Unlock passive income by sharing unused internet bandwidth: install our app
+  and get paid for your spare capacity instantly."
 featured_image: >-
   https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+category: Digital Asset Monetization
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T14:08:15.583660
-author: AI Financial Writer
-draft: false
+  - digital asset monetization
+  - internet of things (iot)
+  - passive income
+  - data monetization
+  - bandwidth sharing
+  - app economy
+  - mobile apps
+  - side hustle ideas
+  - online income streams
+publishedDate: 2025-05-27T14:08:15.583Z
+author: LazyMoney Team
+draft: 'false'
 id: 09605861-61e0-4fc5-98d7-03d40dcfc185
 ---
 

@@ -1,14 +1,24 @@
 ---
 title: Faceless Fortune? AI for YouTube Automation
 slug: faceless-fortune-ai-for-youtube-automation
-description: Build a faceless YouTube channel using AI-generated scripts, voiceovers, and stock footage. Scalable with outsourcing. Monetize with videos—no camera, no problem.
-featured_image: https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+description: >-
+  "Launch a faceless YouTube channel using AI-generated content & stock footage,
+  outsource production & scale up for passive income without owning a camera."
+featured_image: >-
+  https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
+category: Digital Asset Monetization
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T04:57:50.331627
-author: AI Financial Writer
-draft: false
+  - ai-generated content
+  - digital asset monetization
+  - youtube channel creation
+  - stock footage
+  - outsourcing strategy
+  - camera-free content creation
+  - video monetization
+  - e-commerce automation
+publishedDate: 2025-05-27T04:57:50.331Z
+author: LazyMoney Team
+draft: 'false'
 id: 990fbbc2-0132-4f41-a201-99b1978da7fa
 ---
 

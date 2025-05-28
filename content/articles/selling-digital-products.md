@@ -2,19 +2,19 @@
 title: 'Create & Sell: Digital Products for Passive Income'
 slug: selling-digital-products
 description: >-
-  Turn your knowledge, skills, or creativity into sellable digital products like
-  ebooks, templates, or courses.
+  "Unlock passive income by creating and selling digital products: e-books,
+  online courses, and customizable templates."
 featured_image: >-
   https://images.unsplash.com/photo-1581291518857-453c4d6d58a0?auto=format&fit=crop&w=803&q=80
-category: Online Business
+category: Digital Asset Monetization
 tags:
-  - Digital Products
-  - Ebooks
-  - Templates
-  - Online Courses
-  - Passive Income
+  - digital-product-creation
+  - online-business-strategies
+  - entrepreneurship-tips
+  - passive-income-streams
+  - e-learning-marketing
 publishedDate: 2025-05-10T09:30:00.000Z
-author: Lou Collins
+author: LazyMoney Team
 draft: true
 sources:
   - Creating_Ebooks_for_Sale.txt

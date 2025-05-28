@@ -2,20 +2,20 @@
 title: 'Make Your Savings Work: High-Yield Accounts'
 slug: high-yield-savings-accounts
 description: >-
-  Learn how High-Yield Savings Accounts (HYSAs) and Certificates of Deposit
-  (CDs) can help you earn significantly more interest on your cash reserves.
+  "Maximize savings with low-risk investments: Earn higher interest with
+  High-Yield Savings Accounts and Certificates of Deposit."
 featured_image: >-
   https://images.unsplash.com/photo-1620766168105-2d8c5141880b?auto=format&fit=crop&w=801&q=80
-category: Money Habits
+category: Investing
 tags:
-  - Savings
-  - Investing
-  - Passive Income
-  - HYSA
-  - CDs
+  - high-yield savings accounts
+  - certificates of deposit
+  - low-risk investments
+  - cash reserves
+  - maximizing savings
 publishedDate: 2025-05-05T11:30:00.000Z
-author: Lou Collins
-draft: false
+author: LazyMoney Team
+draft: 'false'
 sources:
   - Benefits_of_High_Yield_Savings.txt
   - CDs_vs_Savings_Accounts.txt

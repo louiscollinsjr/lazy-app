@@ -1,14 +1,24 @@
 ---
 title: 'AI as Your Content Co-Pilot: Ads, Social Media & More'
 slug: ai-as-your-content-co-pilot-ads-social-media-more
-description: Supercharge your content game with AI tools like ChatGPT, Jasper, and Canva AI. Instantly generate ad copy, social posts, email sequences, and video scripts—saving hours while keeping your strategy sharp.
-featured_image: https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+description: >-
+  "Boost creativity with AI tools - generate ad copy, social media posts, and
+  content with ChatGPT, Jasper, and Canva AI integrations."
+featured_image: >-
+  https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
+category: Digital Asset Monetization
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T04:57:50.328547
-author: AI Financial Writer
-draft: false
+  - ai-powered content generation
+  - digital asset monetization
+  - creative efficiency tools
+  - chatgpt jasper canva ai
+  - ad copy automation
+  - social media post generator
+  - content creation software
+  - artificial intelligence marketing
+publishedDate: 2025-05-27T04:57:50.328Z
+author: LazyMoney Team
+draft: 'false'
 id: 0c3adc84-3087-486a-9eb9-35c398bec2a6
 ---
 

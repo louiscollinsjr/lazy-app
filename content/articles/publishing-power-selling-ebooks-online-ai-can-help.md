@@ -1,14 +1,26 @@
 ---
 title: 'Publishing Power: Selling eBooks Online (AI Can Help!)'
 slug: publishing-power-selling-ebooks-online-ai-can-help
-description: Write and publish ebooks with the help of AI. From outlining to cover design, tools like ChatGPT make it easier than ever. Upload to Amazon KDP and earn royalties passively.
-featured_image: https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+description: >-
+  "Boost passive income with ease using AI tools like ChatGPT for ebooks -
+  outline, design & publish on Amazon KDP effortlessly."
+featured_image: >-
+  https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
+category: Digital Asset Monetization
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T04:57:50.334748
-author: AI Financial Writer
-draft: false
+  - digital asset monetization
+  - ebook creation
+  - passive income
+  - artificial intelligence tools
+  - chatgpt
+  - amazon kdp
+  - self-publishing
+  - ebook publishing
+  - content creation
+  - ai writing tools
+publishedDate: 2025-05-27T04:57:50.334Z
+author: LazyMoney Team
+draft: 'false'
 id: 2e3675b0-8d66-4438-8f45-b26a0e3b6f54
 ---
 

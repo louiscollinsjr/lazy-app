@@ -1,14 +1,26 @@
 ---
 title: 'Freelancing Online: Turning Skills into Cash (Lazily)'
 slug: freelancing-online-turning-skills-into-cash-lazily
-description: Offer your skills online—writing, design, assistance—and let AI boost your speed and polish. A low-cost, flexible way to earn, even if you're a little lazy.
-featured_image: https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
-category: Investing
+description: >-
+  "Boost your income with AI-powered services: Writing, Design, and Assistance
+  offered at affordable prices for a seamless online experience."
+featured_image: >-
+  https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=804&q=80
+category: Freelancing & Gigs
 tags:
-  - Index Funds
-publishedDate: 2025-05-27T04:57:50.333305
-author: AI Financial Writer
-draft: false
+  - freelance work
+  - online jobs
+  - gig economy
+  - remote work
+  - writing services
+  - design services
+  - virtual assistant
+  - ai powered freelance
+  - online business
+  - entrepreneurship
+publishedDate: 2025-05-27T04:57:50.333Z
+author: LazyMoney Team
+draft: 'false'
 id: c0348692-1973-41e1-8b32-01acf3765085
 ---
 

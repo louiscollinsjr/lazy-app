@@ -74,7 +74,7 @@
   <div class="flex-grow pt-4 transition-all duration-300 ease-in-out"
        class:ml-64={$isSidebarOpen}
        class:ml-0={!$isSidebarOpen}>
-    <main class="max-w-6xl w-full mx-auto px-0 sm:px-0 lg:px-0 pb-12">
+    <main class="max-w-screen-2xl w-full mx-auto px-0 sm:px-0 lg:px-0 pb-12">
       {@render children({ data: enhancedData })}
     </main>
   </div>
